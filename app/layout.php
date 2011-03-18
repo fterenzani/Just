@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<?php echo ob_get_clean() ?>
+<?php echo $content ?>
 
 <?php foreach (array_unique($config->js) as $js): ?>
 <script src="<?php strpos($js, 'http') === 0? $js: $config->web . $js ?>"></script>

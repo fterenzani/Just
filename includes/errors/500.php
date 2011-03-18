@@ -1,7 +1,7 @@
 <?php
 require_once dirname(__FILE__) . '/common.php';
 
-$config->error_title = 'Internal server error';
+$config->title = 'Internal server error';
 
 set_status('500');
 ?>
@@ -15,5 +15,5 @@ set_status('500');
   <pre><?php echo $exception->getTraceAsString() ?></pre>
 <?php endif ?>
 
-
+<?php require $config->layout ?>
 <?php die ?>

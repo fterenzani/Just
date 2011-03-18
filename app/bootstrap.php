@@ -43,6 +43,7 @@ if ($params === false || !file_exists(dirname(__FILE__) . '/modules/' . $params[
 		require 'modules/' . $params['module'] . '/_' . $params['action'] . '.php';
 
 		if ($config->layout) {
+			$content = ob_get_clean();
 			require $config->layout;
 
 		} else {

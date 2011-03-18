@@ -1,8 +1,11 @@
+<?php
+$content = ob_get_clean();
+?>
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title><?php echo $config->error_title ?></title>
+<title><?php echo $config->title ?></title>
 <style>
 html, body {padding: 0; margin: 0}
 body {font: .9em arial; text-align: center; background: #eee}
